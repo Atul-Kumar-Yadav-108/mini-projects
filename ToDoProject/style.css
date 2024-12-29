@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 250, 215);
+}
+
+
+a{
+    margin: 7px;
+    text-decoration: none;
+    border: 1px solid rgb(248, 216, 130);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+table tr{
+    padding: 30px;
+    margin: 10px;
+}
+
+.edit{
+    background-color: green;
+    color:white;
+    font-weight: bold;
+}
+.delete{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+
+td{
+    /* margin: 15px; */
+    padding: 15px;
+}
+
+
+.main-section{
+    display: grid;
+    width: 25vw;
+ background-color: #fff;
+ justify-items: center;
+ justify-content: space-around;
+ margin-left: 38%;
+ margin-top: 5%;
+ padding: 8px 0;
+ border-radius: 5px;
+}
+
+.add-element{
+    display:grid;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(156, 252, 248);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.add-element label{
+    margin: 8px;
+}
+th{
+    background-color: rgb(117, 117, 117);
+    color: #fff;
+    font-size: medium;
+    font-weight: bold;
+}
+
+table{
+    /* align-items: center;
+    text-align: center;
+    background-color: rgb(251, 237, 198);
+    padding: 20px;
+    border-radius: 33px; */
+
+    min-width: 90%;
+}
+
+
+caption{
+    font-size: x-large;
+    font-weight: bold;
+}

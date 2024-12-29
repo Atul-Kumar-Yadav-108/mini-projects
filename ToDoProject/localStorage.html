@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main-section">
+    <h1>TO DO LIST</h1>
+    <div class="add-element">
+        <label for="">Enter Task:
+            <input type="text" id="key">
+        </label>
+        <label for="">Enter Status:
+            <input type="text" id="value">
+        </label>
+        <label for="" id="actionLabel">
+            <button onclick="add_Element()" id="addBtn">Add</button>
+        </label>
+    </div>
+    <table border="1">
+        <caption>Task Details</caption>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+   </div>
+    <script src="localStrorage.js"></script>
+</body>
+</html>
