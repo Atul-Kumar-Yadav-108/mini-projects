@@ -1,0 +1,5 @@
+
+To-Do List App:
+
+ Build a simple to-do list where users can add, edit, and delete tasks. Use
+ localStorage to save the list persistently
