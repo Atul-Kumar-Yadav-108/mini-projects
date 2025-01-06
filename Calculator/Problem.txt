@@ -1,0 +1,6 @@
+/*
+                    Simple Calculator
+    Create a basic calculator with functions like addition, subtraction, multiplication, and
+ division. Use a keypad and display for user interaction.
+
+*/
