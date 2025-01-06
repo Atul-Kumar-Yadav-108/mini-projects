@@ -4,5 +4,60 @@ colors: f8f9fa, e9ecef, dee2e6, ced4da, adb5bd, 6c757d, 495057, 343a40, 212529
 */
 
 body{
-  background-color: #dee2e6;
+  background-color: #f8f9fa;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-body{
+    width: 400px;
+    height: 500px;
+    background-color: #dee2e6;
+    border-radius: 5%;
+    box-shadow:7px 10px 11px 2px #adb5bd;
+    position: relative;
+    left: 35%;
+    padding-top: 15px;
+}
+
+.btn{
+    width: 86px;
+    height: 55px;
+    background-color: #caf0f8;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+
+.div1, .div2, .div3, .div4, .div5{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.display-panel{
+    width: 90%;
+    height: 60px;
+    background-color: #edf6f9;
+    margin: 5px 10px 15px 10px;
+    justify-self: center;
+    box-shadow: 7px -7px 33px 6px #adb5bd;
+}
+
+#equalto{
+    width: 177px;
+    height: 55px;
+}
+
+button{
+    background: none;
+    border: none;
+    column-rule: white;
+    cursor: pointer;
 }
