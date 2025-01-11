@@ -20,13 +20,61 @@
 // let subBtn = document.getElementById('mulBtn');
 // let divBtn = document.getElementById('divBtn');
 
-let buttons = document.querySelectorAll('.btn');
+// let buttons = document.querySelectorAll('.btn');
+// let displayPanel = document.querySelector('#display-pnl');
+// console.log(buttons)
+// buttons.forEach((button) =>{
+//     button.addEventListener('click',(event)=>{
 
-buttons.forEach((button) =>{
-    button.addEventListener('click',(event)=>{
-        console.log(event.target.id);
-    });
-});
+//         // console.log(event.target.id);
+//         if(event.target.innerText == 'C')
+//             displayPanel.innerHTML = '';
+//         if(event.target.innerText != 'C' && event.target.innerText != 'OFF' && event.target.innerText != 'ON' && event.target.innerText != '=')
+//             displayPanel.innerText = displayPanel.innerText + event.target.innerText;
+
+//     });
+// });
+
+let switchBtn = document.getElementById('switchBtn');
+console.log(switchBtn);
+let switchBtnStatus = false;
+
+
+switchBtn.addEventListener('click',()=>{
+    if(switchBtnStatus){
+        switchBtn.innerHTML = '<button><h1>OFF</h1></button>';
+        Array.from(document.getElementsByClassName('btn')).forEach((item) => {
+            item.style.backgroundColor = '#a9a9a9';
+            
+        });   
+        switchBtn.style.cssFloat.backgroundColor = '#FA9696';   
+        switchBtnStatus = false;
+    }else{
+        switchBtn.innerHTML = '<button><h1>ON</h1></button>';
+        Array.from(document.getElementsByClassName('btn')).forEach((item) => {
+            item.style.backgroundColor = '#72adda';
+        });  
+        switchBtnStatus = true;
+    }
+
+    if(switchBtnStatus){
+        let buttons = document.querySelectorAll('.btn');
+        let displayPanel = document.querySelector('#display-pnl');
+        console.log(buttons)
+        buttons.forEach((button) =>{
+            button.addEventListener('click',(event)=>{
+    
+                // console.log(event.target.id);
+                if(event.target.innerText == 'C')
+                    displayPanel.innerHTML = '';
+                if(event.target.innerText != 'C' && event.target.innerText != 'OFF' && event.target.innerText != 'ON' && event.target.innerText != '=')
+                    displayPanel.innerText = displayPanel.innerText + event.target.innerText;
+    
+            });
+        });
+    }
+})
+
 
 // equalTo.addEventListener('click',()=>{
 //     console.log('=');

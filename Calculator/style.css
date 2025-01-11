@@ -15,7 +15,7 @@ body{
 .calculator-body{
     width: 400px;
     height: 410px;
-    background-color: #dee2e6;
+    background-color: #dadfe4;
     border-radius: 5%;
     box-shadow:7px 10px 11px 2px #adb5bd;
     position: relative;
@@ -26,7 +26,7 @@ body{
 .btn{
     width: 86px;
     height: 55px;
-    background-color: #caf0f8;
+    background-color: #a9a9a9;
     margin-left: 5px;
     border-radius: 5px;
     text-align: center;
